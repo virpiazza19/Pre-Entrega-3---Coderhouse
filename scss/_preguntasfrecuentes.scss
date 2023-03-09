@@ -1,0 +1,13 @@
+/* ********* PREGUNTAS FRECUENTES COMPONENTES ********* */
+/* Configuración del div que engloba los componentes para la página de preguntas frecuentes */
+
+.divPreguntas {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	color: $color_3;
+	margin-bottom: 40px;
+}
+
+/* ****************** */

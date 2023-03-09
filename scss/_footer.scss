@@ -1,0 +1,39 @@
+/* Mixin para la configuración sobreescrita de bootstrap */
+@mixin bootstrap {
+	background-color: $background-color_2;
+	font-family: $font-family_1;
+}
+
+/* ********* FOOTER ********* */
+/* Clases sobreescritas de bootstrap */
+
+.py-3 {
+	@include bootstrap;
+}
+.my-4 {
+	@include bootstrap;
+}
+.text-center {
+	@include bootstrap;
+}
+/* Configuración de los elementos de la lista que componen el footer */
+
+footer {
+	ul {
+		li {
+			font-size: 14px;
+			padding-bottom: 0;
+			border-bottom: 1px solid firebrick;
+			margin-bottom: 0;
+		}
+	}
+}
+/* Configuración genérica del footer */
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 160px;
+}
+/* ****************** */

@@ -1,0 +1,101 @@
+/* ********* CONTACTO COMPONENTES ********* */
+
+/* Configuración del div que engloba los componentes para la página de contacto */
+.divContacto {
+	margin: 70px 0 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $color_3;
+	text-align: center;
+
+	/* Configuración específica para el título dentro del div global */
+	h1 {
+		width: 80%;
+		text-align: center;
+	}
+
+	/* Configuración específica para el párrafo dentro del div global */
+	p {
+		width: 80%;
+		text-align: center;
+	}
+}
+
+/* Div que engloba el formulario */
+.formDiv {
+	background-color: $background-color_2;
+	border: 2px solid white;
+	padding: 40px;
+	margin-top: 15px;
+	width: 80%;
+	max-width: 600px;
+	min-width: 300px;
+	text-align: left;
+}
+
+/* Configuración de las fuente de los componentes del formulario */
+.formFonts {
+	font-family: $font-family_2;
+	color: $color_3;
+}
+
+/* Configuración del input de comentarios para dejar el componente estático en su tamaño */
+#message {
+	max-width: 500px;
+	max-height: 200px;
+	min-height: 200px;
+	padding: 5px;
+	margin-top: 5px;
+	background-color: $background-color_4;
+	border: 1px solid rgb(246, 207, 207);
+	color: $color_3;
+}
+
+/* Configuración de colores en los placeholder de los formularios */
+form {
+	&::placeholder {
+		color: $color_4;
+		opacity: 1;
+	}
+}
+
+/* Configuración específica de los input del formulario */
+input {
+	height: 30px;
+	padding: 2px 5px 2px 5px;
+	margin-top: 5px;
+	background-color: $background-color_4;
+	border: 1px solid rgb(246, 207, 207);
+	color: $color_3;
+	max-width: 500px;
+}
+
+/* Sobreescribo configuración de bootstrap de los input del formulario */
+.form-control {
+	height: 30px;
+	padding: 2px 5px 2px 5px;
+	margin-top: 5px;
+	background-color: $background-color_4;
+	border: 1px solid rgb(246, 207, 207);
+	color: $color_3;
+	max-width: 500px;
+}
+
+/* Configuración de los botones dentro del formulario */
+.button {
+	width: 100px;
+	height: 30px;
+	border: 1px solid firebrick;
+	border-radius: 5px;
+	margin-right: 10px;
+
+	/* Configuración del hover de los botones */
+	&:hover {
+		background-color: $background-color_5;
+		color: $color_5;
+	}
+}
+
+/* ****************** */

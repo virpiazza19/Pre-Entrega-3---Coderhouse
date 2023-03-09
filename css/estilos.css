@@ -1,0 +1,411 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Staatliches&display=swap"; /* --- PROPIEDADES GENERALES DE LOS HTML --- */
+/* Saco el margen y padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Parte de configuración para hacer que el footer quede fijo en el fondo de la pantalla */
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 160px;
+}
+
+/* Configuración genérica del fondo */
+body {
+  background-color: rgb(158, 54, 54);
+  margin-bottom: 160px;
+}
+
+/* Configuración genérica del Título de los body */
+.h1Titulo {
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  margin: 5px 10%;
+  font-size: 50px;
+  color: whitesmoke;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  border-bottom: 2px solid black;
+}
+
+/* Configuración genérica de los párrafos */
+p {
+  color: white;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.parrafoGeneral {
+  padding: 0px 10%;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Configuración genérica del subtitulo */
+.subtituloGeneral {
+  font-family: "Roboto", sans-serif;
+  margin: 5px 10%;
+  font-size: 2.5rem;
+  color: whitesmoke;
+  text-align: center;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.underSubtituloGeneral {
+  font-family: "Roboto", sans-serif;
+  margin: 5px 10%;
+  font-size: 1.8rem;
+  color: whitesmoke;
+  text-align: center;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  border-bottom: 2px solid black;
+}
+
+.subclase {
+  border-bottom: none;
+}
+
+/* ****************** */
+/* Se crea el mixin para los links */
+/* Se crea el mixin con configuración general de los fondos y margen del navbar y el menu compacto */
+/* ********* HEADER/NAVBAR ********* */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: rgb(31, 30, 30);
+  font-family: "Staatliches", cursive;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> clase de "a" dentro del menú*/
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: firebrick;
+  font-size: 20px;
+  /* Se reemplaza el style dentro del "a" por la clase de bootstrap -> clase de "a" dentro del menú*/
+}
+.nav-link:hover {
+  color: firebrick;
+  text-decoration-color: whitesmoke;
+}
+
+/* Se reemplaza el style dentro del "a" por la clase de bootstrap -> clase de "a" dentro del menú*/
+.active {
+  color: firebrick !important;
+}
+.active:hover {
+  color: whitesmoke;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> clase del popup del menú compacto*/
+.offcanvas {
+  background-color: rgb(31, 30, 30);
+  color: whitesmoke;
+}
+
+/* Agrego margen para que el botón del menú compacto no esté pegado a la derecha */
+.navbar-toggler {
+  margin-right: 1rem;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> clase del popup del menú compacto*/
+.offcanvas-title {
+  font-size: 2rem;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> color de fondo del header*/
+.background-color {
+  background-color: rgb(31, 30, 30);
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> tamaño del fondo del header*/
+.container-fluid {
+  background-color: rgb(31, 30, 30);
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-body-tertiary {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-expand-lg {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-top {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo del header */
+.logo {
+  width: 60px;
+  padding-left: 1rem;
+}
+
+/* Título del header (se reemplazó el h1 por el h2 para usar el h1 dentro de la página)*/
+h2 {
+  font-size: 40px;
+  color: white;
+  margin-left: 30px;
+}
+
+/* ****************** */
+/* Mixin para la configuración sobreescrita de bootstrap */
+/* ********* FOOTER ********* */
+/* Clases sobreescritas de bootstrap */
+.py-3 {
+  background-color: rgb(31, 30, 30);
+  font-family: "Staatliches", cursive;
+}
+
+.my-4 {
+  background-color: rgb(31, 30, 30);
+  font-family: "Staatliches", cursive;
+}
+
+.text-center {
+  background-color: rgb(31, 30, 30);
+  font-family: "Staatliches", cursive;
+}
+
+/* Configuración de los elementos de la lista que componen el footer */
+footer ul li {
+  font-size: 14px;
+  padding-bottom: 0;
+  border-bottom: 1px solid firebrick;
+  margin-bottom: 0;
+}
+
+/* Configuración genérica del footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+}
+
+/* ****************** */
+/* ********* HOME COMPONENTES ********* */
+/* Tamaño del video responsive */
+.iframe {
+  margin: 10px 10%;
+  height: 50vw;
+  width: auto;
+}
+
+/* Contenedor general dentro del main */
+.divIndex {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ****************** */
+/* ********* PRODUCTOS COMPONENTES ********* */
+/* Configuración del div que engloba los componentes para la página de productos */
+.divProductos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+/* Configuración para el div de la galería */
+.divGaleria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Configuración genérica para las cards dentro de la galería */
+.items {
+  margin-inline: 30px;
+  margin-block: 30px;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgb(31, 30, 30);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0px 15px 5px 15px;
+}
+
+/* Configuración genérica de las imágenes */
+.fotosProductos {
+  width: 400px;
+  height: 250px;
+}
+
+/* ****************** */
+/* ********* PREGUNTAS FRECUENTES COMPONENTES ********* */
+/* Configuración del div que engloba los componentes para la página de preguntas frecuentes */
+.divPreguntas {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+/* ****************** */
+/* ********* ENVÍOS COMPONENTES ********* */
+/* Configuración del div que engloba los componentes para la página de envíos */
+.divEnvios {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+/* Configuración genérica del div de las empresas de envíos */
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Configuración de los dev hijos dentro de logos */
+.envios {
+  margin-inline: 50px;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* Configuración genérica de los logos de las empresas de envíos */
+.envioLogo {
+  width: 150px;
+  height: 150px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+/* ****************** */
+/* ********* CONTACTO COMPONENTES ********* */
+/* Configuración del div que engloba los componentes para la página de contacto */
+.divContacto {
+  margin: 70px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  text-align: center;
+  /* Configuración específica para el título dentro del div global */
+  /* Configuración específica para el párrafo dentro del div global */
+}
+.divContacto h1 {
+  width: 80%;
+  text-align: center;
+}
+.divContacto p {
+  width: 80%;
+  text-align: center;
+}
+
+/* Div que engloba el formulario */
+.formDiv {
+  background-color: rgb(31, 30, 30);
+  border: 2px solid white;
+  padding: 40px;
+  margin-top: 15px;
+  width: 80%;
+  max-width: 600px;
+  min-width: 300px;
+  text-align: left;
+}
+
+/* Configuración de las fuente de los componentes del formulario */
+.formFonts {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
+
+/* Configuración del input de comentarios para dejar el componente estático en su tamaño */
+#message {
+  max-width: 500px;
+  max-height: 200px;
+  min-height: 200px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #2d2b2b;
+  border: 1px solid rgb(246, 207, 207);
+  color: whitesmoke;
+}
+
+/* Configuración de colores en los placeholder de los formularios */
+form::placeholder {
+  color: rgb(246, 207, 207);
+  opacity: 1;
+}
+
+/* Configuración específica de los input del formulario */
+input {
+  height: 30px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 5px;
+  background-color: #2d2b2b;
+  border: 1px solid rgb(246, 207, 207);
+  color: whitesmoke;
+  max-width: 500px;
+}
+
+/* Sobreescribo configuración de bootstrap de los input del formulario */
+.form-control {
+  height: 30px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 5px;
+  background-color: #2d2b2b;
+  border: 1px solid rgb(246, 207, 207);
+  color: whitesmoke;
+  max-width: 500px;
+}
+
+/* Configuración de los botones dentro del formulario */
+.button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid firebrick;
+  border-radius: 5px;
+  margin-right: 10px;
+  /* Configuración del hover de los botones */
+}
+.button:hover {
+  background-color: firebrick;
+  color: black;
+}
+
+/* ****************** */
+
+/*# sourceMappingURL=estilos.css.map */

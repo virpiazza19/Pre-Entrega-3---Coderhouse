@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Tu Alfombra - Contacto</title>
+</head>
+
+<body class="h-100">
+    <header>
+        <!-- Nav que engloba el menú, sacado de bootstrap, pero corregí el diseño para que se adapte a los colores que quiero-->
+        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top background-color navbar-dark bg-dark"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <img class="logo" src="../img/TU ALFOMBRA.svg" alt="Tu alfombra logo">
+                <!-- Título -->
+                <h2>Tu Alfombra</h2>
+                <!-- Botón del menú compacto que solo aparece cuando la pantalla se achica -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- "PopUp" cuando se activa el botón del menú compacto -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- Subtítulo del menú compacto -->
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tu Alformbra</h5>
+                        <!-- Botón para cerrar el menú compacto -->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!-- Menú -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <!-- Cambié el style dentro del "a" con la clase de bootstrap "active", sobreescribiendola en el css -->
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="envios.html">Envíos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main para englobar todos los componentes específicos de la página -->
+    <!-- Este formulario no es responsive -->
+    <main>
+        <div class="divContacto">
+            <h1 class="h1Titulo">Contacto</h1>
+            <p>Dejanos tu mensaje y nos estaremos contactando a la brevedad.</p>
+
+            <!-- Formulario de contacto -->
+            <form class="formDiv">
+                <div class="mb-3">
+                    <label for="name" class="form-label formFonts">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label formFonts">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su apellido" id="lastname">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label formFonts">Mail</label>
+                    <input type="email" class="form-control" placeholder="Ingrese su email" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label formFonts">Teléfono</label>
+                    <input type="tel" class="form-control" placeholder="Ingrese su teléfono con código de área"
+                        id="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" placeholder="Deje su mensaje" id="message" rows="3"></textarea>
+                </div>
+                <div><input type="submit" class="button">
+                    <input type="reset" class="button">
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Footer responsive sacado de bootstrap, sobreescrito para ajustarse al diseño de la primera entrega -->
+    <footer class="footer py-3 my-4">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item nav-link">|</li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com">Instagram</a>
+            </li>
+            <li class="nav-item nav-link">|</li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com">Facebook</a>
+            </li>
+            <li class="nav-item nav-link">|</li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.whatsapp.com">Whatsapp</a>
+            </li>
+            <li class="nav-item nav-link">|</li>
+        </ul>
+        <p class="text-center">© 2023 Tu Alfombra SAP</p>
+    </footer>
+    <!-- Script para habilitar la funcionalidad de JS de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

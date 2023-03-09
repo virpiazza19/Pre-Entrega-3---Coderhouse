@@ -1,0 +1,5 @@
+1. Abrir git bash dentro de la carpeta general del proyecto
+2. Ejecutar: npm install -g sass
+3. Ejecutar: sass --watch scss/estilo.scss css/estilos.css
+4. Para cortar: Crtl+Crtl
+

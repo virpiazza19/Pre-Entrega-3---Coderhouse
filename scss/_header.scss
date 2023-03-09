@@ -1,0 +1,101 @@
+/* Se crea el mixin para los links */
+@mixin links {
+	color: $color_1;
+	text-decoration: none;
+	text-decoration-color: firebrick;
+	font-size: 20px;
+}
+
+/* Se crea el mixin con configuración general de los fondos y margen del navbar y el menu compacto */
+@mixin navbar {
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+/* ********* HEADER/NAVBAR ********* */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5%;
+	background-color: $background-color_2;
+	font-family: $font-family_1;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> clase de "a" dentro del menú*/
+.nav-link {
+	@include links;
+
+	/* Se reemplaza el style dentro del "a" por la clase de bootstrap -> clase de "a" dentro del menú*/
+	&:hover {
+		color: $color_2;
+		text-decoration-color: whitesmoke;
+	}
+}
+
+/* Se reemplaza el style dentro del "a" por la clase de bootstrap -> clase de "a" dentro del menú*/
+.active {
+	color: $color_2 !important;
+
+	&:hover {
+		color: $color_3;
+	}
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> clase del popup del menú compacto*/
+.offcanvas {
+	background-color: $background-color_2;
+	color: $color_3;
+}
+
+/* Agrego margen para que el botón del menú compacto no esté pegado a la derecha */
+.navbar-toggler {
+	margin-right: 1rem;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> clase del popup del menú compacto*/
+.offcanvas-title {
+	font-size: 2rem;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> color de fondo del header*/
+.background-color {
+	background-color: $background-color_2;
+}
+
+/* Sobreescribo clase de bootstrap para ajustar al diseño original -> tamaño del fondo del header*/
+.container-fluid {
+	background-color: $background-color_2;
+	@include navbar;
+}
+
+.navbar {
+	@include navbar;
+}
+
+.bg-body-tertiary {
+	@include navbar;
+}
+
+.navbar-expand-lg {
+	@include navbar;
+}
+
+.fixed-top {
+	@include navbar;
+}
+
+/* Logo del header */
+.logo {
+	width: 60px;
+	padding-left: 1rem;
+}
+
+/* Título del header (se reemplazó el h1 por el h2 para usar el h1 dentro de la página)*/
+h2 {
+	font-size: 40px;
+	color: $color_1;
+	margin-left: 30px;
+}
+/* ****************** */
