@@ -367,6 +367,12 @@ footer ul li {
   border: 1px solid rgb(246, 207, 207);
   color: whitesmoke;
 }
+#message:focus {
+  color: white;
+  border: 1px solid firebrick;
+  background-color: #2d2b2b;
+  box-shadow: none;
+}
 
 /* Configuración de colores en los placeholder de los formularios */
 form::placeholder {
@@ -394,6 +400,16 @@ input {
   border: 1px solid rgb(246, 207, 207);
   color: whitesmoke;
   max-width: 500px;
+}
+.form-control:focus {
+  color: white;
+  border: 1px solid firebrick;
+  background-color: #2d2b2b;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  color: rgb(246, 207, 207);
+  opacity: 1;
 }
 
 /* Configuración de los botones dentro del formulario */

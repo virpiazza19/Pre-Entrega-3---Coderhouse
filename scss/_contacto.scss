@@ -51,6 +51,12 @@
 	background-color: $background-color_4;
 	border: 1px solid rgb(246, 207, 207);
 	color: $color_3;
+	&:focus{
+		color: white;
+		border: 1px solid $color_2;
+		background-color: $background-color_4;
+		box-shadow: none;
+	}
 }
 
 /* Configuración de colores en los placeholder de los formularios */
@@ -81,6 +87,16 @@ input {
 	border: 1px solid rgb(246, 207, 207);
 	color: $color_3;
 	max-width: 500px;
+	&:focus{
+		color: white;
+		border: 1px solid $color_2;
+		background-color: $background-color_4;
+		box-shadow: none;
+	}
+	&::placeholder {
+		color: $color_4;
+		opacity: 1;
+	}
 }
 
 /* Configuración de los botones dentro del formulario */
