@@ -13,8 +13,10 @@
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <title>Tu Alfombra - Preguntas Frecuentes</title>
 </head>
@@ -71,7 +73,9 @@
     <!-- Main para englobar todos los componentes específicos de la página -->
     <main class="divPreguntas">
         <div class="divIndex">
-            <h1 class="h1Titulo subclase">Preguntas Frecuentes</h1>
+            <!-- Se agrega animación en el título del main -->
+            <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="h1Titulo subclase">
+                Preguntas Frecuentes</h1>
             <!-- Titulo para preguntas -->
             <h4 class="underSubtituloGeneral">¿Dónde estamos?</h4>
             <!-- Parrafo genérico con lorem -->
@@ -159,6 +163,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- Script para habilitar las animaciones de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

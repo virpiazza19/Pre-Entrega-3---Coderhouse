@@ -13,6 +13,8 @@
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -26,7 +28,9 @@
             data-bs-theme="dark">
             <div class="container-fluid">
                 <!-- Logo -->
-                <img class="logo" src="img/LogoPagina.svg" alt="Tu alfombra logo">
+                <!-- Se agrega animación en el logo del index -->
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="logo"
+                    src="img/LogoPagina.svg" alt="Tu alfombra logo">
                 <!-- Título -->
                 <h2>Tu Alfombra</h2>
                 <!-- Botón del menú compacto que solo aparece cuando la pantalla se achica -->
@@ -71,7 +75,9 @@
     <main>
         <!-- Div que engloba todos los componentes del main -->
         <div class="divIndex">
-            <h1 class="h1Titulo">¿Quiénes somos?</h1>
+            <!-- Se agrega animación en el título del main -->
+            <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="h1Titulo">¿Quiénes somos?
+            </h1>
             <!-- Video responsive -->
             <iframe class="iframe col-12" src="https://www.youtube.com/embed/oB8o2jfUcZ8" title="YouTube video player"
                 frameborder="0"
@@ -191,6 +197,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- Script para habilitar las animaciones de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
